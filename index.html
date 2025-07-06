@@ -48,9 +48,8 @@
             font-size: 16px;
             font-weight: 500;
             border: 2px solid white;
-            border-radius: 0;
+            border-radius: 25px;
             transition: all 0.3s ease;
-            clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
         }
         
         .nav-register:hover {
@@ -160,6 +159,16 @@
             margin-top: 60px;
         }
         
+        .footer-logo {
+            width: 80px;
+            height: 80px;
+            background-image: url('https://github.com/vasudvy/webpage/raw/main/resologo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto 20px auto;
+        }
+        
         .footer h3 {
             margin: 0 0 20px 0;
             font-size: 24px;
@@ -190,6 +199,136 @@
             margin: 50px 0 30px 0;
             border-top: 1px solid #ccc;
             padding-top: 40px;
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .navbar {
+                padding: 12px 15px;
+                flex-wrap: wrap;
+            }
+            
+            .navbar h1 {
+                font-size: 20px;
+            }
+            
+            .logo {
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+            }
+            
+            .nav-register {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+            
+            .hero-image {
+                height: 250px;
+            }
+            
+            .container {
+                padding: 30px 20px;
+                max-width: 100%;
+            }
+            
+            h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+            
+            .registry-notice {
+                font-size: 17px;
+                margin: 40px 0 25px 0;
+                padding-top: 30px;
+            }
+            
+            .form-section {
+                margin-top: 30px;
+            }
+            
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="date"],
+            textarea,
+            select {
+                padding: 12px;
+                font-size: 16px;
+            }
+            
+            button {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+            }
+            
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .footer-logo {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .social-links {
+                gap: 15px;
+            }
+            
+            .social-links a {
+                font-size: 18px;
+                padding: 8px;
+            }
+        }
+        
+        /* Tablet and small laptop adjustments */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                max-width: 600px;
+                padding: 40px 25px;
+            }
+            
+            .hero-image {
+                height: 350px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            p {
+                font-size: 17px;
+            }
+        }
+        
+        /* Large screen adjustments */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 800px;
+            }
+            
+            .hero-image {
+                height: 450px;
+            }
+            
+            h2 {
+                font-size: 36px;
+            }
+            
+            p {
+                font-size: 19px;
+            }
         }
     </style>
 </head>
@@ -281,6 +420,7 @@
     </div>
     
     <div class="footer">
+        <div class="footer-logo"></div>
         <h3>Resonance</h3>
         <div class="social-links">
             <a href="#">𝕏</a>
