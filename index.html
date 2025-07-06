@@ -12,6 +12,7 @@
             background-color: white;
             color: black;
             line-height: 1.6;
+            padding-top: 75px;
         }
         
         .navbar {
@@ -21,6 +22,17 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
+            transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
         }
         
         .nav-left {
@@ -38,6 +50,7 @@
             border: 2px solid white;
             border-radius: 0;
             transition: all 0.3s ease;
+            clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
         }
         
         .nav-register:hover {
@@ -58,8 +71,8 @@
         }
         
         .logo {
-            width: 30px;
-            height: 30px;
+            width: 45px;
+            height: 45px;
             background-image: url('https://github.com/vasudvy/webpage/raw/main/resologo.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -275,5 +288,16 @@
             <a href="#">▶</a>
         </div>
     </div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
