@@ -70,8 +70,8 @@
         }
         
         .logo {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             background-image: url('https://github.com/vasudvy/webpage/raw/main/resologo.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -187,8 +187,8 @@
         }
         
         .footer-logo {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             background-image: url('https://github.com/vasudvy/webpage/raw/main/resologo.png');
             background-size: contain;
             background-repeat: no-repeat;
@@ -221,6 +221,28 @@
             color: #ccc;
         }
         
+        .video-section {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        
+        .video-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        
         .registry-notice {
             font-size: 19px;
             margin: 50px 0 30px 0;
@@ -244,8 +266,8 @@
             }
             
             .logo {
-                width: 35px;
-                height: 35px;
+                width: 60px;
+                height: 60px;
                 margin-right: 10px;
             }
             
@@ -255,7 +277,7 @@
             }
             
             .hero-image {
-                height: 250px;
+                height: 300px;
             }
             
             .container {
@@ -280,8 +302,29 @@
                 padding-top: 30px;
             }
             
+            .video-section {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            
+            .video-section h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .video-container {
+                max-width: 100%;
+                padding-bottom: 56.25%;
+            }
+            
             .form-section {
                 margin-top: 30px;
+                padding: 25px 20px;
+                background-color: #f8f9fa;
+            }
+            
+            .form-group {
+                margin-bottom: 20px;
             }
             
             input[type="text"],
@@ -305,8 +348,8 @@
             }
             
             .footer-logo {
-                width: 60px;
-                height: 60px;
+                width: 100px;
+                height: 100px;
             }
             
             .social-links {
@@ -327,7 +370,7 @@
             }
             
             .hero-image {
-                height: 350px;
+                height: 400px;
             }
             
             h2 {
@@ -346,7 +389,7 @@
             }
             
             .hero-image {
-                height: 450px;
+                height: 550px;
             }
             
             h2 {
@@ -377,6 +420,19 @@
         <p>Resonance is an AI device for speech restoration. We are making human machine interface to restore speech in patients who lost their voice after stroke or post surgical complications and help them reclaim their self expression.</p>
         
         <p>Our products are aimed to serve our customers with utmost delight and improve their quality of life by a magnitude.</p>
+        
+        <div class="video-section">
+            <h2>Listen what our users have to say</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/oHm4zF3UJ9k?si=xaq6Qs1j7d8rkT5j" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
         
         <div class="registry-notice">
             <p><strong>Patient Registry is open (accepting only laryngectomy patients currently)</strong></p>
