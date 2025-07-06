@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance - AI Device for Speech Restoration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-register {
+            background-color: white;
+            color: black;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            border: 2px solid white;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-register:hover {
+            background-color: transparent;
+            color: white;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://github.com/vasudvy/webpage/raw/main/patch.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo {
+            width: 30px;
+            height: 30px;
+            background-image: url('https://github.com/vasudvy/webpage/raw/main/resologo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 15px;
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 50px 30px;
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 24px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        
+        .form-section {
+            margin-top: 50px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+        
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: black;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background-color: #333;
+        }
+        
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        .footer h3 {
+            margin: 0 0 20px 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #ccc;
+        }
+        
+        .registry-notice {
+            font-size: 19px;
+            margin: 50px 0 30px 0;
+            border-top: 1px solid #ccc;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="logo"></div>
+            <h1>Resonance</h1>
+        </div>
+        <a href="#registry" class="nav-register">Register</a>
+    </div>
+    
+    <div class="hero-image">
+    </div>
+    
+    <div class="container">
+        <h2>About Resonance</h2>
+        
+        <p>Resonance is an AI device for speech restoration. We are making human machine interface to restore speech in patients who lost their voice after stroke or post surgical complications and help them reclaim their self expression.</p>
+        
+        <p>Our products are aimed to serve our customers with utmost delight and improve their quality of life by a magnitude.</p>
+        
+        <div class="registry-notice">
+            <p><strong>Patient Registry is open (accepting only laryngectomy patients currently)</strong></p>
+        </div>
+        
+        <div class="form-section" id="registry">
+            <h2>Patient Registry</h2>
+            
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="surgery-date">Surgery Date</label>
+                    <input type="date" id="surgery-date" name="surgery-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="surgery-type">Type of Surgery</label>
+                    <select id="surgery-type" name="surgery-type" required>
+                        <option value="">Select surgery type</option>
+                        <option value="total-laryngectomy">Total Laryngectomy</option>
+                        <option value="partial-laryngectomy">Partial Laryngectomy</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="surgery-details">Surgery Details</label>
+                    <textarea id="surgery-details" name="surgery-details" placeholder="Please provide details about your surgery"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="current-device">Current Device Used</label>
+                    <input type="text" id="current-device" name="current-device" placeholder="e.g., Electrolarynx, TEP, etc.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="device-duration">Estimated Time Period of Using Current Device</label>
+                    <input type="text" id="device-duration" name="device-duration" placeholder="e.g., 2 years, 6 months">
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-info">Additional Information</label>
+                    <textarea id="additional-info" name="additional-info" placeholder="Any other relevant information you'd like to share"></textarea>
+                </div>
+                
+                <button type="submit">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h3>Resonance</h3>
+        <div class="social-links">
+            <a href="#">𝕏</a>
+            <a href="#">in</a>
+            <a href="#">▶</a>
+        </div>
+    </div>
+</body>
+</html>
